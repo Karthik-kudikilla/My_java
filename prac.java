@@ -1,20 +1,33 @@
 class prac{
 	public static void main(String ar[]) {
-		int k=2,n=4;
-		for(int i=1;i<=4;i++) {
-			for(int j=1;j<=i;j++) {
-				System.out.print(j);
+		int n=5,k=0;
+		for(int i=0;i<n;i++) {
+			for(int j=0;j<(n-i);j++) {
+				System.out.print("*");
 			}
-			for(int j=0;j<(2*n)-k;j++) {
+			for(int j=0;j<k;j++) {
 				System.out.print(" ");
 			}
-			for(int j=i;j>0;j--) {
-				System.out.print(j);
+			for(int j=0;j<(n-i);j++) {
+				System.out.print("*");
 			}
-			k=k2;
+			k+=2;
+			System.out.println();
+			
+		}
+		k-=2;
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=i;j++) {
+				System.out.print("*");
+			}
+			for(int j=0;j<k;j++)
+				System.out.print(" ");
+			for(int j=1;j<=i;j++) {
+				System.out.print("*");
+			}
+			k-=2;
 			System.out.println();
 		}
-		
 		
 	}
 }
